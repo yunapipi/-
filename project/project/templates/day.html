@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Day
+{% endblock %}
+
+{% block main %}
+
+{% for word in wordlist %}
+<div class="word">
+    <b>{{ word[0] }}</b>
+    <b>{{ word[1] }}</b>
+    <b>{{ word[2] }}</b>
+</div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Animal
+{% endblock %}
+
+{% block main %}
+
+{% for word in wordlist %}
+<div class="word">
+    <b>{{ word[0] }}</b>
+    <strong>{{ word[1] }}</strong>
+    <b>{{ word[2] }}</b>
+</div>
+{% endfor %}
+
+{% endblock %}

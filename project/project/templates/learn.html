@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Learn
+{% endblock %}
+
+{% block main %}
+
+<form action="/learn" method="post">
+  <div class="form-group">
+    <select onChange="location.href=value;" select name="learn" class="form-control">
+      <option disable selected value>選択</option>
+      <option value="/animal">動物の名前</option>
+      <option value="/day">曜日</option>
+      <option value="/emotion">感情</option>
+      <option value="/live">生活</option>
+      <option value="/move">動作</option>
+      <option value="/number">数字</option>
+
+
+
+
+    </select>
+  </div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Numer_test
+{% endblock %}
+
+{% block main %}
+
+{% for word in wordlist %}
+<div class="card">
+  <!-- 裏面のコンテンツ -->
+  <div class="back">
+      <img src="/static/blue.jpeg/" alt="写真"/>
+      <b>{{ word[0] }}</b>
+  </div>
+
+  <!-- 表面のコンテンツ -->
+  <div class="front">
+      <img src="/static/pink.jpg/" alt="写真"/>
+      <b>{{ word[1] }}</b>
+      <b2>{{ word[2] }}</b2>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}
+

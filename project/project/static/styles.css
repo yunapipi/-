@@ -1,0 +1,209 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .skyblue
+{
+    color: #87ceeb;
+}
+nav .navbar-brand .lightskyblue
+{
+    color: #87cefa;
+}
+nav .navbar-brand .paleturquoise
+{
+    color: #afeeee;
+}
+nav .navbar-brand .powderblue
+{
+    color: #b0e0e6;
+}
+nav .navbar-brand .lightblue
+{
+    color: #add8e6;
+}
+nav .navbar-brand .turquoise
+{
+    color: #40e0d0;
+}
+nav .navbar-brand .mediumturquoise
+{
+    color: #48d1cc;
+}
+nav .navbar-brand .darkturquoise
+{
+    color: #00ced1;
+}
+nav .navbar-brand .lightseagreen
+{
+    color: #20b2aa;
+}
+nav .navbar-brand .deepskyblue
+{
+    color: #00bfff;
+}
+
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+.word
+{
+    width:50%;
+    margin: 2em auto;
+    padding: 2em;
+    border: 5px double #ccddff;
+    border-radius: 10px;
+}
+
+.word b
+{
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.word strong
+{
+    font-size: 50px;
+    line-height: 50px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+/* カード本体 */
+.card
+{
+    width: 30%; /* 任意の横幅を指定 */
+    position: relative;
+    cursor: pointer;
+    display:inline-block;
+}
+
+/* 擬似要素とpadding-topでカードの高さを指定 */
+.card::before
+{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+/* カードの画像 */
+.card img
+{
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* カード内の文字 */
+.card b
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    color:#ffffff;
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.card b2
+{
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    color:#ffffff;
+    font-size: 19px;
+    line-height: 50px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+/* カード裏面・表面の共通スタイル */
+.card .back,
+.card .front
+{
+    transition: all 0.6s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+/* カード表面のスタイル */
+.card .front
+{
+    transform: rotateY(-180deg);
+}
+
+/* ホバー時のカード裏面 */
+.card:hover .back
+{
+    transform: rotateY(180deg);
+}
+
+/* ホバー時のカード表面 */
+.card:hover .front
+{
+    transform: rotateY(0);
+}
+
+.url {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.url iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.apology img
+{
+    width: 35%;
+}

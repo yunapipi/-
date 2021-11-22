@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Test
+{% endblock %}
+
+{% block main %}
+
+<form action="/test" method="post">
+  <div class="form-group">
+    <select onChange="location.href=value;" select name="test" class="form-control">
+      <option disable selected value>選択</option>
+      <option value="/animal_test">動物の名前</option>
+      <option value="/day_test">曜日</option>
+      <option value="/emotion_test">感情</option>
+      <option value="/live_test">生活</option>
+      <option value="/move_test">動作</option>
+      <option value="/number_test">数字</option>
+    </select>
+  </div>
+
+{% endblock %}

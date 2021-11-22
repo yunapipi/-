@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Number
+{% endblock %}
+
+{% block main %}
+
+{% for word in wordlist %}
+<div class="word">
+
+<!--<div style="position:relative; display:inline-block;">-->
+<!--  <img src=/static/card.jpeg/ alt="写真" width="600" height="400">-->
+<!--  <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 100%; padding: 30px; text-align: left;">-->
+    <b>{{ word[0] }}</b>
+    <b>{{ word[1] }}</b>
+    <b>{{ word[2] }}</b>
+
+</div>
+{% endfor %}
+
+
+
+
+{% endblock %}
+
+
+
+<!--<div class="button">-->
+<!--  <a class="first"> Keep hovering me </a>-->
+<!--  <a class="slidein"> how are you today? </a>-->
+<!--  <a class="slidein two"> I'm doing well </a>-->
+<!--  <a class="slidein three"> thanks for asking </a>-->
+<!--  <a class="slidein four"> its a good life... </a>-->
+<!--  <a class="slidein five"> ...being a button </a>-->
+<!--  <a class="slidein six"> the work is hard </a>-->
+<!--  <a class="slidein seven"> but enjoyable </a>-->
+<!--  <a class="slidein eight"> yep, its great </a>-->
+<!--  <a class="slidein nine"> ... </a>-->
+<!--  <a class="slidein ten"> save me </a>-->
+<!--</div>-->
